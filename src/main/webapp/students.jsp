@@ -25,6 +25,7 @@
 					<tr>
 						<th>Student Name</th>
 						<th>Email</th>
+						<th>Profile</th>
 						<th>Age</th>
 						<th>Year</th>
 						<th>Address</th>
@@ -34,6 +35,9 @@
 						<tr>
 							<td>${student.name }</td>
 							<td>${student.email }</td>
+							<td>
+								<img src="/06-EL-JSTL/imgUploads/${student.profile}" alt="Image" width="100" height="100" />
+							</td>
 							<td>${student.age }</td>
 							<td>${student.year }</td>
 							<td>${student.address }</td>

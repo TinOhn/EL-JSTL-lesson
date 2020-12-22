@@ -19,7 +19,7 @@
 			<div class="col">
 				<hr />
 				<c:url value="/add-student" var="addstu"></c:url>
-				<form action="${addstu}" class="form col-6" method="post">
+				<form action="${addstu}" class="form col-6" method="post" enctype="multipart/form-data">
 					<div class="form-group">
 						<label>Student Name</label>
 						<input type="text" name="studentname" required="required" placeholder="Enter Name" class="form-control" />
@@ -49,6 +49,10 @@
 					<div class="form-group">
 						<label>Date Of Birth</label>
 						<input type="date" name="dob" required="required" placeholder="Enter Date of birth" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label>Image</label>
+						<input type="file" name="photo" required="required" placeholder="Enter Profile" class="form-control" />
 					</div>
 					<button type="submit" class="btn btn-outline-primary">Save</button>
 					<button type="reset" class="btn btn-outline-danger">Clear</button>
